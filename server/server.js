@@ -23,9 +23,7 @@ if (env.NAME === 'dev') {
 // create a new express server
 // var app = require('../client/app');
 var app = express();
-var apiUrl = 'http://test-lighthouse-api.eu-gb.mybluemix.net/bluebank';
-var apiGeo = 'http://test-lighthouse-api.eu-gb.mybluemix.net/geofence';
-var apiAuth = 'https://cloudlevel.io/token'; //apiAuth for Bluebank
+var apiUrl = '';
 
 // Set app to use static filepaths
 app.use('/app', express.static(path.resolve(curr_env + '/app')));
@@ -36,33 +34,6 @@ app.use('/styles', express.static(path.resolve(curr_env +'/styles')));
 // route for api calls
 app.get('/api', function(req, res, next) {
   return res;
-});
-
-// api/getaccounts
-app.get('/api/getaccounts', function(req,res) {
-  request(apiUrl + '/getaccounts').pipe(res);
-});
-
-// api/getpoapayments
-app.get('/api/getpoapayments', function(req,res) {
-  request(apiUrl + '/getpoapayments').pipe(res);
-});
-
-// api/updategeofence
-app.post('/api/updategeofence', function(req,res) {
-  request({
-    url: apiGeo + '/specify', //URL to hit
-    qs: {from: 'Lighthouse Angular App', time: +new Date()}, //Query string data
-    method: 'POST',
-    //Lets post the following key/values as form
-    json: req.body
-  }, function(error, response, body){
-      if(error) {
-          console.log(error);
-      } else {
-          console.log(response.statusCode, body);
-      }
-  });
 });
 
 
