@@ -1,0 +1,37 @@
+{
+  "name": "rbs-lighthouse-app",
+  "private": true,
+  "version": "0.0.1",
+  "description": "RBS Lighthouse Application",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "engines": {
+    "node": "4.x"
+  },
+  "author": "James McGuire",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-angular-templates": "^1.1.0",
+    "grunt-bower-concat": "^1.0.0",
+    "grunt-bower-task": "^0.4.0",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-ng-annotate": "^2.0.2",
+    "grunt-nodemon": "^0.4.2",
+    "grunt-sass": "^1.2.1",
+    "grunt-usemin": "^3.1.1",
+    "load-grunt-tasks": "^3.5.2"
+  },
+  "dependencies": {
+    "cfenv": "^1.0.3",
+    "express": "^4.14.0",
+    "request": "^2.75.0",
+    "passport": "^0.3.2"
+  }
+}

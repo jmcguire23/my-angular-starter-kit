@@ -1,0 +1,16 @@
+@mixin container($align, $justify, $direction) {
+  &__container{
+    position: relative;
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+    flex-wrap: wrap;
+    height: 100%;
+    max-width: 1336px;
+    padding: 0 15px;
+    margin: 0 auto;
+    // Pass content overrides here
+    @content;
+  }
+}

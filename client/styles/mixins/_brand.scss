@@ -1,0 +1,21 @@
+// Brand colour mixins and classes
+
+// Mixins
+$brand-blue: #30a5ff;
+
+//Classes
+.brand{
+  &__blue{
+    color: $brand-blue;
+  }
+}
+
+.brand__logo{
+  font-size: 1em;
+  margin: 0 auto;
+  text-decoration: none;
+  &:hover, &:visited, &:active{
+    text-decoration: none;
+    color: inherit;
+  }
+}

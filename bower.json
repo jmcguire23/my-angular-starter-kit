@@ -1,0 +1,26 @@
+{
+  "name": "angular-starterkit",
+  "version": "0.0.1",
+  "description": "angular starter kit for new Angular 1.5.* projects",
+  "authors": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular-mocks": "^1.5.3"
+  },
+  "dependencies": {
+    "jquery": "^2.2.2",
+    "angular": "~1.5.3",
+    "angular-sanitize": "~1.5.3",
+    "angular-ui-router": "^0.2.18"
+  },
+  "resolutions": {
+    "angular": "1.5.3",
+  }
+}

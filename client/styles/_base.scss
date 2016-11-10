@@ -1,0 +1,17 @@
+// Base stylings for site
+// Include normalize.css to iron out minor browser issues
+@import "mixins/mixins",
+        "../app/app",
+        "normalize";
+
+html{
+  height: 100%;
+}
+
+body{
+  position: relative;
+  min-height: 100%;
+}
+.default{
+  @include container(flex-start, flex-start, column);
+}

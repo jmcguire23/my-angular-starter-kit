@@ -1,0 +1,42 @@
+//SCSS for Navbar component
+.navbar{
+  background-color: #222;
+  color: #fff;
+}
+
+//Wrapper for Navbar
+.navbar__wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0 auto;
+  height: 40px;
+  padding: 5px;
+}
+
+.navbar__brand{
+  flex: 2;
+}
+
+.navbar__links{
+  flex: 1;
+  margin: 0 auto;
+  list-style: none;
+  display: inline-block;
+  text-align: right;
+}
+
+.navbar__link{
+  display: inline-block;
+  margin: 0 5px;
+  a{
+    text-decoration: none;
+    color: #fff;
+    transition: all 200ms linear;
+    &:hover, &:active{
+      text-decoration: none;
+      color: #30a5ff;
+    }
+  }
+}

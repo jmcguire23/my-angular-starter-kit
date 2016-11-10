@@ -1,0 +1,8 @@
+// main SCSS file for app specific styles
+// create a new SCSS file for each new component
+@import "components/components",
+        "views/views";
+
+.app{
+  //empty... for now.
+}
