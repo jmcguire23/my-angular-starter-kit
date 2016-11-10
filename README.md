@@ -1,46 +1,38 @@
-## Intro
-
-Project Lighthouse for RBS
-
-## Getting started - Running Locally
-
-    git clone git@github.ibm.com:rbs-lighthouse/lighthouse-app.git
+## Angular Starter Kit
+------
+### Getting started
+#### Clone and Install Packages
+    git clone -
     npm install
     bower install
+
+#### Build Dist
     grunt
-    npm start (start local server)
 
-## TODO's
+#### Run Dev Server
+_You must run two terminal instances to start Nodemon and Browsersync_.
 
-    Create unit tests for angular components
+_In first terminal window run:_
 
-    Create Grunt task to serve client folder for testing
+    grunt serve
 
-    Create Grunt task to serve static dist content
+_In second terminal window run:_
 
-## Grunt Tasks
+    grunt sync
 
-Currently Grunt compiles a dist folder for the application code. It concats and minifies the anuglar application and copies all package dependencies into a lib folder.
+_*See gruntfile.js for task configurations*_.
 
-## Deployment
-## Jenkins and Docker
+------
 
-Detailed instructions about the Docker and Jenkins setups can be found [here](https://github.ibm.com/rbs-lighthouse/lighthouse-docker)
+### John Papa Style Guide
 
-## Builds
+For this starter kit I followed John Papa's Angular 1.* style guide, and adapted the application structure to run with Grunt. See his comprehensive guide [here](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md).
 
-Any commits that are pushed to branches matching the pattern `origin/feature/**` will trigger the dev-build job.
+### BEM SASS
 
-When you create a pull request your code will automatically get build and deploying by the lighthouse-test-build job. The results will be reported back in to the pull request. If you want to request another build once you've added more code comment on the PR with the words `build please`.
+I love using SASS/SCSS in all my projects, and BEM is my naming convention of choice. Obviously you may choose to use which ever setup or configuration nescessary for your projects but if you wish to read more about incorporating BEM naming conventions with SASS follow this [link](http://www.alwaystwisted.com/post.php?s=2014-02-27-even-easier-bem-ing-with-sass-33).
 
-Once you merge your code into `develop` the pre-prod build will run and deploy your code to the pre-prod app.
+### TODO
 
-## Contributing
-
-Please read the [Contributing guidelines](.github/CONTRIBUTING.md) before starting to write code for Project Lighthouse.
-
-## The Hackathon Code
-
-The original code for the hackathon was stored in 3 repositories on http://hub.jazz.net. We sinced moved the code to Github to make
-it easier to manage and integrate with Jenkins.
-You can get back to the version of the code that was delivered by checking out the `v1` tag.
+- Blog article breaking down application structure, and reasoning behind choices made
+- My SCSS approaches blog post
