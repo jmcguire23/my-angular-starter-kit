@@ -2,7 +2,7 @@
 <html ng-app="app">
   <head>
     <meta charset="utf-8">
-    <title>RBS Lighthouse</title>
+    <title>Angular Starter Kit</title>
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="/lib/nvd3/nv.d3.css">
   </head>
@@ -20,26 +20,15 @@
     <!-- List libraries that are required for application -->
     <!-- relative to their directory location in the distribution build -->
     <script src="/lib/jquery/jquery.js" charset="utf-8"></script>
-    <script src="/lib/d3/d3.js" charset="utf-8"></script>
-    <script src="/lib/nvd3/nv.d3.js" charset="utf-8"></script>
     <script src="/lib/angular/angular.js" charset="utf-8"></script>
     <script src="/lib/angular-sanitize/angular-sanitize.js" charset="utf-8"></script>
     <script src="/lib/angular-ui-router/angular-ui-router.js" charset="utf-8"></script>
-    <script src="/lib/angular-nvd3/angular-nvd3.js" charset="utf-8"></script>
-    <script src="/lib/lodash/dist/lodash.min.js" charset="utf-8"></script>
-    <script src="/lib/google-maps-utility-library-v3-infobox/infobox.js" charset="utf-8"></script>
-    <script src="/lib/google-maps-utility-library-v3-keydragzoom/keydragzoom.js" charset="utf-8"></script>
-    <script src="/lib/google-maps-utility-library-v3-markerwithlabel/markerwithlabel.js" charset="utf-8"></script>
-    <script src="/lib/js-rich-marker/richmarker.js" charset="utf-8"></script>
-    <script src="/lib/markerclustererplus/markerclusterer.js" charset="utf-8"></script>
-    <script src="/lib/angular-simple-logger/angular-simple-logger.js" charset="utf-8"></script>
-    <script src="/lib/angular-google-maps/angular-google-maps.js" charset="utf-8"></script>
     <!-- /libs -->
 
     <!-- build:js app/main.js -->
     <script src="/app/app.module.js" charset="utf-8"></script>
     <script src="/app/app.route.js" charset="utf-8"></script>
-    <script src="/app/app.templates.js"></script>
+    <!-- <script src="/app/app.templates.js"></script> -->
 
     <script src="/app/core/core.module.js" charset="utf-8"></script>
 
@@ -49,13 +38,8 @@
     <script src="/app/components/components.module.js" charset="utf-8"></script>
     <script src="/app/components/navbar/navbar.module.js" charset="utf-8"></script>
     <script src="/app/components/navbar/navbar.directive.js" charset="utf-8"></script>
-    <script src="/app/components/map/map.module.js" charset="utf-8"></script>
-    <script src="/app/components/map/map.directive.js" charset="utf-8"></script>
-    <script src="/app/components/map/map.controller.js" charset="utf-8"></script>
 
     <script src="/app/services/services.module.js" charset="utf-8"></script>
-    <script src="/app/services/map.service/map.service.module.js" charset="utf-8"></script>
-    <script src="/app/services/map.service/map.service.factory.js" charset="utf-8"></script>
     <script src="/app/services/api.service/api.service.module.js" charset="utf-8"></script>
     <script src="/app/services/api.service/api.service.factory.js" charset="utf-8"></script>
 
@@ -64,9 +48,6 @@
     <script src="/app/views/home/home.module.js" charset="utf-8"></script>
     <script src="/app/views/home/home.controller.js" charset="utf-8"></script>
     <script src="/app/views/home/home.route.js" charset="utf-8"></script>
-    <script src="/app/views/dashboard/dashboard.module.js" charset="utf-8"></script>
-    <script src="/app/views/dashboard/dashboard.controller.js" charset="utf-8"></script>
-    <script src="/app/views/dashboard/dashboard.route.js" charset="utf-8"></script>
     <!-- endbuild -->
 
   </body>

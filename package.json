@@ -1,8 +1,8 @@
 {
-  "name": "rbs-lighthouse-app",
+  "name": "angular-starter-kit",
   "private": true,
   "version": "0.0.1",
-  "description": "RBS Lighthouse Application",
+  "description": "Angular Starter Kit - Created by James McGuire",
   "main": "app.js",
   "scripts": {
     "start": "node server/server.js"

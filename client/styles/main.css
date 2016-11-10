@@ -9,40 +9,6 @@
     text-decoration: none;
     color: inherit; }
 
-.map__container {
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height: 100%;
-  max-width: 1336px;
-  padding: 0 15px;
-  margin: 0 auto;
-  padding: 0; }
-
-.map__post-geofence {
-  padding: 10px;
-  font-size: 1.25em;
-  background-color: #3d86e7;
-  border: 1px solid #3d86e7;
-  color: #fff;
-  transition: all 200ms linear; }
-  .map__post-geofence:hover {
-    background-color: #4391f9;
-    border: 1px solid #4494ff; }
-
-.angular-google-map {
-  width: 100%; }
-
-.angular-google-map-container {
-  height: 400px;
-  min-width: 300px;
-  margin: 0 auto;
-  width: 100%;
-  border: 1px solid #000; }
-
 .navbar {
   background-color: #222;
   color: #fff; }
@@ -76,9 +42,6 @@
     .navbar__link a:hover, .navbar__link a:active {
       text-decoration: none;
       color: #30a5ff; }
-
-.dashboard__accounts {
-  width: 100%; }
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**

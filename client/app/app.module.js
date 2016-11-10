@@ -3,7 +3,6 @@
       'app.core',
       'app.login',
       'app.home',
-      'app.dashboard',
       'app.components',
       'app.services'
     ])
